@@ -1,4 +1,4 @@
-![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/a23f8a70-c77c-4876-9ade-7cb48928e045)
+
 # Gathering Of Data:
 1. Download the trip data from the folloing [link](https://divvy-tripdata.s3.amazonaws.com/index.html).
 2. Unzip the files and turn them into csv files.
@@ -59,7 +59,7 @@
         c. Calculate the max ridelength for each month.<br/>
         d. Calculate the mode day for each month.<br/>
         
-7. Summarize the calculations as follows:
+7. Summarize the calculations as follows:<br/>
         |S.No| Month| Max Ride Length|
         |---|-----|-------|
         |1|April 2020|40.77780093|
