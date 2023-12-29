@@ -1,4 +1,4 @@
-
+![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/450bb970-82bc-485c-8413-25e5dac030de)
 # Gathering Of Data:
 1. Download the trip data from the folloing [link](https://divvy-tripdata.s3.amazonaws.com/index.html).
 2. Unzip the files and turn them into csv files.
@@ -57,13 +57,13 @@
         a. total no of rides: per hour, per day, per week and for type of bike <br/>
         b. Average ride lentgh between members and casual.<br/>
         c. Calculate the max ridelength for each month.<br/>
-        d. Calculate the mode day for each month.<br/>
+        
         
 7. Summarize the calculations as follows:<br/>
-        |S.NO| Month| File Name|
+        |S.NO| Month|Max Ride Length |
      |---|-----|-----|    
-     |1.| April 2020| 202004-divvy-tripdata.csv|
-     |2.| May 2020| 202005-divvy-tripdata.csv|
+     |1.| April 2020|40.77780093|
+     |2.| May 2020| 20.06728009|
      |3.| June 2020| 202006-divvy-tripdata.csv|
      |4.| July 2020| 202007-divvy-tripdata.csv|
      |5.| August 2020| 202008-divvy-tripdata.csv|
@@ -106,9 +106,6 @@
      |42.|September 2023| 202309-divvy-tripdata.csv|
      |43.| October 2023| 202310-divvy-tripdata.csv|
      |44.| November 2023| 202311-divvy-tripdata.csv|
-        |---|-----|-------|
-        |1 | April 2020 | 40.77780093 |
-
    
    
 
