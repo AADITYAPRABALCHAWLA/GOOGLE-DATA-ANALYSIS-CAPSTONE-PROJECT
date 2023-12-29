@@ -64,7 +64,7 @@
      |---|-----|-----|    
      |1.| April 2020|40.77780093|
      |2.| May 2020| 20.06728009|
-     |3.| June 2020| 202006-divvy-tripdata.csv|
+     |3.| June 2020| 28.66041667|
      |4.| July 2020| 202007-divvy-tripdata.csv|
      |5.| August 2020| 202008-divvy-tripdata.csv|
      |6.| September 2020| 202009-divvy-tripdata.csv|
