@@ -16,7 +16,7 @@ Design marketing strategies aimed at converting casual riders into annual member
 3. How can Cyclistic use digital media to influence casual riders to become members?
 
 # Process
-**Step 1**: Analyze the data sperately month wise in excel.
+**Step 1**: Analyze the data sperately month wise in excel. <br/>
 **Step 2**: Use R to anayze the data as a whole
 **Step 3**: Use tableau dashboards to create visual representations of our output
 
