@@ -4,7 +4,8 @@
 2. Unzip the files and turn them into csv files.
 3. Note down the names of files represented by the months as follows:
      |1.| April 2020|- 202004-divvy-tripdata.csv|
-     |2.| May 2020|- 202005-divvy-tripdata.csv|
+     |---|-----|-----|
+   |2.| May 2020|- 202005-divvy-tripdata.csv|
      |3.| June 2020|- 202006-divvy-tripdata.csv|
      |4.| July 2020|- 202007-divvy-tripdata.csv|
      5. August 2020- "202008-divvy-tripdata.csv
