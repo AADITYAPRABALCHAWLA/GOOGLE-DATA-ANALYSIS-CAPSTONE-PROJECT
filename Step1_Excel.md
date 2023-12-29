@@ -63,7 +63,6 @@
         |S.No| Month| Max Ride Length|
         |---|-----|-------|
         |1|April 2020|40.77780093|
-![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/e7cef2be-d64b-4852-8e23-fcc18842364d)
 
    
    
