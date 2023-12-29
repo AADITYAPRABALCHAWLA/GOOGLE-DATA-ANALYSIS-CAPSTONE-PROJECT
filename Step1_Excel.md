@@ -1,7 +1,7 @@
 
 # Gathering Of Data:
 1. Download the trip data from the folloing [link](https://divvy-tripdata.s3.amazonaws.com/index.html).
-2. Unzip the files and turn them into csv files.\
+2. Unzip the files and turn them into csv files.
 3. Note down the names of files represented by the months as follows:
      |S.NO| Month| File Name|
      |---|-----|-----|    
@@ -50,7 +50,8 @@
      |43.| October 2023| 202310-divvy-tripdata.csv|
      |44.| November 2023| 202311-divvy-tripdata.csv|
    
-4. Add the following columns:
+4. Add the following columns:<br/>
         a. ride_length- calculates total ride length as ended_at - started_at <br/>
         b. day_of_week- calculates day of the week using start_at column. <br/>
+5.
 
