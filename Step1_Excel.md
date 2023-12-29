@@ -1,6 +1,6 @@
 
 # Gathering Of Data:
-1. Download the data from the folloing [link] (https://divvy-tripdata.s3.amazonaws.com/index.html).
+1. Download the data from the folloing [link](https://divvy-tripdata.s3.amazonaws.com/index.html).
 2. Unzip the files and turn them into csv files.
 3. Note down the names of files represented by the months as follows:
      |S.NO| Month| File Name|
