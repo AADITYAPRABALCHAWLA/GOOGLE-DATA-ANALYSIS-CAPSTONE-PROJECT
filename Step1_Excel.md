@@ -60,9 +60,9 @@
         d. Calculate the mode day for each month.<br/>
         
 7. Summarize the calculations as follows:<br/>
-        |S.No| Month| Max Ride Length|
+        |S.No| Month | Max Ride Length |
         |---|-----|-------|
-        |1|April 2020|40.77780093|
+        |1|April2020|40.77780093|
 
    
    
