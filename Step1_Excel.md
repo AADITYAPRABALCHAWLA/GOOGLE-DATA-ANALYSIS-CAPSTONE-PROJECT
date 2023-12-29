@@ -53,11 +53,11 @@
 4. Add the following columns:<br/>
         a. ride_length- calculates total ride length as ended_at - started_at <br/>
         b. day_of_week- calculates day of the week using start_at column using : =TEXT(Col,"dddd") <br/>
-5. Calculate the follwoing metrics:<br/>
+6. Calculate the follwoing metrics:<br/>
         a. total no of rides: per hour, per day, per week and for type of bike <br/>
         b. Average ride lentgh between members and casual.<br/>
         c. Calculate the max ridelength for each month.<br/>
         d. Calculate the mode day for each month.<br/>
-6. Summarize the calculations as follows:
-7. 
+7. Summarize the calculations as follows:
+8. 
 
