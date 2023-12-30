@@ -1,4 +1,4 @@
-#Gathering Of Data:
+# Gathering Of Data:
 1. Download the trip data from the folloing [link](https://divvy-tripdata.s3.amazonaws.com/index.html).
 2. Unzip the files and turn them into csv files.
 3. Note down the names of files represented by the months as follows:
