@@ -1,4 +1,4 @@
-# Gathering Of Data:
+![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/731bcb33-6e61-40aa-9831-87f9e3596c2f)![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/1da2eb66-59b5-4091-9c5e-5b027ebe9ce2)![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/c0440815-c8e9-4e6c-a341-f36c1343ebb7)![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/1be5b828-eb93-47fd-9119-d9e653e1c9a8)![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/adf7c194-9646-44ca-94e3-50dc14d36592)![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/d4224bca-52fa-4a1b-b6c4-ce23f977aa6c)![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/6d5b7c24-325a-4380-8376-3c119541168e)![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/b19aa96a-ab05-42a0-bf09-2e394623d135)![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/d3342190-702a-460f-9c67-d52d11c61657)![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/0e71941b-0c04-4f34-b62c-ded72de17352)![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/55d76c7c-7462-47ca-837b-ba97cef61b9e)![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/b0e7fd78-67a1-416e-82c2-1e28f1ceb2d1)![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/dfdc4fe6-1131-4f03-b747-96b6146d8d5b)![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/22e2a8d5-f7c7-4979-a942-6de0d7f1f029)![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/1b404f23-7817-4aac-afad-faf9137b86e8)![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/1d80317f-16db-4dc6-b70e-d59c531c065c)# Gathering Of Data:
 1. Download the trip data from the folloing [link](https://divvy-tripdata.s3.amazonaws.com/index.html).
 2. Unzip the files and turn them into csv files.
 3. Note down the names of files represented by the months as follows:
@@ -81,30 +81,30 @@
      |18.| September 2021|22.81842593|
      |19.| October 2021|28.26737269|
      |20.| November 2021|24.30396991|
-     |21.| December 2021| |
-     |22.| Janvary 2022| |
-     |23.| Febrary 2022| |
-     |24.| March 2022| |
-     |25.| April 2022| |
-     |26.| May 2022| |
-     |27.| June 2022| |
-     |28.| July 2022| |
-     |29.| August 2022| |
-     |30.| September 2022| |
-     |31.| October 2022| |
-     |32.| November 2022| |
-     |33.| December 2022| |
-     |34.| Janvary 2023| |
-     |35.| Febrary 2023| |
-     |36.| March 2023| |
-     |37.| April 2023| |
-     |38.| May 2023| |
-     |39.| June 2023| |
-     |40.| July 2023| |
-     |41.| August 2023| |
-     |42.|September 2023||
-     |43.| October 2023| |
-     |44.| November 2023| |
+     |21.| December 2021|21.11149306|
+     |22.| Janvary 2022|20.32715278|
+     |23.| Febrary 2022|7.573587963|
+     |24.| March 2022|23.85699074|
+     |25.| April 2022|14.66819444|
+     |26.| May 2022| 25.17902778|
+     |27.| June 2022|24.8754398|
+     |28.| July 2022|23.75612269|
+     |29.| August 2022|19.53428241|
+     |30.| September 2022|19.2344213|
+     |31.| October 2022|28.74114583|
+     |32.| November 2022|13.61986111|
+     |33.| December 2022|13.30354167|
+     |34.| Janvary 2023|23.33592593|
+     |35.| Febrary 2023|13.10122685|
+     |36.| March 2023|11.67226852|
+     |37.| April 2023|12.7746412|
+     |38.| May 2023|20.28508102|
+     |39.| June 2023|20.46247685|
+     |40.| July 2023|35.73708333|
+     |41.| August 2023|68.39518519|
+     |42.|September 2023|1.047060185|
+     |43.| October 2023|1.041631944|
+     |44.| November 2023|1.041956019|
    
    
 
