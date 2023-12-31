@@ -300,10 +300,12 @@ cycle2022_date %>% group_by(member_casual) %>% summarise_at(vars(ride_length),li
 cycle2021_date %>% group_by(member_casual,rideable_type) %>% summarise_at(vars(ride_length),list(time=mean))
 cycle2022_date %>% group_by(member_casual,rideable_type) %>% summarise_at(vars(ride_length),list(time=mean))
                                                                           
-$ Average bike length by type of bike
+# Average ride length by type of bike
 cycle2021_date %>% group_by(hour) %>% summarise_at(vars(ride_length),list(time=mean) %>% print(n=24)
 cycle2022_date %>% group_by(hour) %>% summarise_at(vars(ride_length),list(time=mean) %>% print(n=24)
 
+# Average ride length in morning by member class
+cycle2021_date %>% group_by(member_casual) %>% filter(time_of_day == "Morning") %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2022_date %>% group_by(member_casual) %>% filter(time_of_day == "Morning") %>% summarise_at(vars(ride_length),list(time = mean))
 
-
-
+# Average ride length in morning
