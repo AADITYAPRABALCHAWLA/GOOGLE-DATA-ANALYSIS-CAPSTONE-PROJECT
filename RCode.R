@@ -1,1 +1,33 @@
+#----------------------------------------- R CODE--------------------------------------------------
 
+# loading libraries
+library(tidyverse)
+library(lubridate)
+library(hms)
+library(data.table)
+
+# laoding data into varaibles
+ jan2021=read.csv("202101-divvy-tripdata.csv")
+ feb2021=read.csv("202102-divvy-tripdata.csv")
+ mar2021=read.csv("202103-divvy-tripdata.csv")
+ apr2021=read.csv("202104-divvy-tripdata.csv")
+ may2021=read.csv("202105-divvy-tripdata.csv")
+ jun2021=read.csv("202106-divvy-tripdata.csv")
+ jul2021=read.csv("202107-divvy-tripdata.csv")
+ aug2021=read.csv("202108-divvy-tripdata.csv")
+ sep2021=read.csv("202109-divvy-tripdata.csv")
+ oct2021=read.csv("202110-divvy-tripdata.csv")
+ nov2021=read.csv("202111-divvy-tripdata.csv")
+ dec2021=read.csv("202112-divvy-tripdata.csv")
+ jan2022=read.csv("202201-divvy-tripdata.csv")
+ feb2022=read.csv("202202-divvy-tripdata.csv")
+ mar2022=read.csv("202203-divvy-tripdata.csv")
+ apr2022=read.csv("202204-divvy-tripdata.csv")
+ may2022=read.csv("202205-divvy-tripdata.csv")
+ jun2022=read.csv("202206-divvy-tripdata.csv")
+ jul2022=read.csv("202207-divvy-tripdata.csv")
+ aug2022=read.csv("202208-divvy-tripdata.csv")
+ sep2022=read.csv("202209-divvy-tripdata.csv")
+ oct2022=read.csv("202210-divvy-tripdata.csv")
+ nov2022=read.csv("202211-divvy-tripdata.csv")
+ dec2022=read.csv("202212-divvy-tripdata.csv")
