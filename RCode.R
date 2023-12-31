@@ -62,7 +62,136 @@ cycle2022_date$day=format(as.Date(cycle2022_date$date),"%y")
 cycle2021_date$time=format(as.Date(cycle2022_date$date),"%h:%m:%s")
 cycle2021_date$hour=hour(cycle2021_date$time)
 
+# Creating columns for different seasons
+cycle2021_date=cycle2021_date %>% mutate(season =
+ case_when(month == "03" ~ "Spring",
+                                                        month == "04" ~ "Spring",
+                                                        month == "05" ~ "Spring",
+                                                        month == "06"  ~ "Summer",
+                                                        month == "07"  ~ "Summer",
+                                                        month == "08"  ~ "Summer",
+                                                        month == "09" ~ "Fall",
+                                                        month == "10" ~ "Fall",
+                                                        month == "11" ~ "Fall",
+                                                        month == "12" ~ "Winter",
+                                                        month == "01" ~ "Winter",
+                                                        month == "02" ~ "Winter")
+ )
+ cycle2022_date=cycle2022_date %>% mutate(season = 
+                                              case_when(month == "03" ~ "Spring",
+                                                       month == "04" ~ "Spring",
+                                                        month == "05" ~ "Spring",
+                                                        month == "06"  ~ "Summer",
+                                                        month == "07"  ~ "Summer",
+                                                        month == "08"  ~ "Summer",
+                                                        month == "09" ~ "Fall",
+                                                        month == "10" ~ "Fall",
+                                                        month == "11" ~ "Fall",
+                                                        month == "12" ~ "Winter",
+                                                        month == "01" ~ "Winter",
+                                                        month == "02" ~ "Winter")
+ )
 
+# Creating columns for different time of day
+cycle2021_date=cycle2021_date %>% mutate(time_of_day=case_when(hour == "0" ~ "Night",
+                                                        hour == "1" ~ "Night",
+                                                        hour == "2" ~ "Night",
+                                                        hour == "3" ~ "Night",
+                                                        hour == "4" ~ "Night",
+                                                        hour == "5" ~ "Night",
+                                                        hour == "6" ~ "Morning",
+                                                        hour == "7" ~ "Morning",
+                                                        hour == "8" ~ "Morning",
+                                                        hour == "9" ~ "Morning",
+                                                        hour == "10" ~ "Morning",
+                                                        hour == "11" ~ "Morning",
+                                                        hour == "12" ~ "Afternoon",
+                                                        hour == "13" ~ "Afternoon",
+                                                        hour == "14" ~ "Afternoon",
+                                                        hour == "15" ~ "Afternoon",
+                                                        hour == "16" ~ "Afternoon",
+                                                        hour == "17" ~ "Afternoon",
+                                                        hour == "18" ~ "Evening",
+                                                        hour == "19" ~ "Evening",
+                                                        hour == "20" ~ "Evening",
+                                                        hour == "21" ~ "Evening",
+                                                        hour == "22" ~ "Evening",
+                                                       hour == "23" ~ "Evening")
+ )
+
+cycle2022_date=cycle2022_date %>% mutate(time_of_day=case_when(hour == "0" ~ "Night",
+                                                        hour == "1" ~ "Night",
+                                                        hour == "2" ~ "Night",
+                                                        hour == "3" ~ "Night",
+                                                        hour == "4" ~ "Night",
+                                                        hour == "5" ~ "Night",
+                                                        hour == "6" ~ "Morning",
+                                                        hour == "7" ~ "Morning",
+                                                        hour == "8" ~ "Morning",
+                                                        hour == "9" ~ "Morning",
+                                                        hour == "10" ~ "Morning",
+                                                        hour == "11" ~ "Morning",
+                                                        hour == "12" ~ "Afternoon",
+                                                        hour == "13" ~ "Afternoon",
+                                                        hour == "14" ~ "Afternoon",
+                                                        hour == "15" ~ "Afternoon",
+                                                        hour == "16" ~ "Afternoon",
+                                                        hour == "17" ~ "Afternoon",
+                                                        hour == "18" ~ "Evening",
+                                                        hour == "19" ~ "Evening",
+                                                        hour == "20" ~ "Evening",
+                                                        hour == "21" ~ "Evening",
+                                                        hour == "22" ~ "Evening",
+                                                        hour == "23" ~ "Evening")
+ )
+
+ 
+# Cleaning the data
+cycle2021_date=na.omit(cycle2021_date)
+cycle2022_date=na.omit(cycle2022_date)
+cycle2021_date=distinct(cycle2021_date)
+cycle2022_date=distinct(cycle2022_date)
+cycle2021_date=cycle2021_date %>% 
+select(-c(ride_id,start_station_id,end_station_id,start_lat,start_lng,end_lat,end_lng))
+cycle2022_date=cycle2022_date %>% 
+select(-c(ride_id,start_station_id,end_station_id,start_lat,start_lng,end_lat,end_lng))
+
+# Viewing the data
+view(cycle2021_date)
+view(cycle2022_date)
+
+# Total number of rides
+nrow(cycle2021_date)
+nrow(cycle2022_date)
+
+# Member types
+cycle2021_date %>% group_by(member_casual) %>% count(member_casual)
+cycle2022_date %>% group_by(member_casual) %>% count(Member_casual)
+
+# Total rides by member class per bike
+cycle2021_date %>% group_by(member_causal,rideable_type) %>% count(rideable_type)
+cycle2022_date %>% group_by(member_causal,rideable_type) %>% count(rideable_type)
+ 
+# Total rides per bike
+cycle2021_date %>% group_by(rideable_type) %>% count(rideable_type)
+cycle2022_date %>% group_by(rideable_type) %>% count(rideable_type)
+
+# Total rides by member class per hour
+cycle2021_date %>% group_by(member_casual) %>% count(hour) %>% print(n=48)
+cycle2022_date %>% group_by(member_casual) %>% count(hour) %>% print(n=48)
+
+# Total rides per hour
+cycle2021_date %>% count(hour) %>% print(n=24)
+cycle2022_date %>% count(hour) %>% print(n=24)
+
+# Total rides by member class in morning
+cycle2021_date %>% (group_by(member_casual) %>% filter(time_of_day =="Morning")%>%count(time_of_day)
+cycle2022_date %>% (group_by(member_casual) %>% filter(time_of_day =="Morning")%>%count(time_of_day)
+
+# Total rides in morning
+cycle2021_date %>% filter(time_of_day=="Morning") %>% count (time_of_day)
+     
+                  
 
 
 
