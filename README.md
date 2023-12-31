@@ -17,6 +17,6 @@ Design marketing strategies aimed at converting casual riders into annual member
 
 # 🦾Process
 **[Step 1](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Step1_Excel.md)**: Analyze the data sperately month wise in excel <br/>
-**Step 2**: Use R to anayze the data as a whole<br/>
+**[Step 2](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Step2_RCODE.R)**: Use R to anayze the data as a whole<br/>
 **Step 3**: Use tableau dashboards to create visual representations of our output<br/>
 
