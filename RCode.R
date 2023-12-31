@@ -190,14 +190,119 @@ cycle2022_date %>% (group_by(member_casual) %>% filter(time_of_day =="Morning")%
 
 # Total rides in morning
 cycle2021_date %>% filter(time_of_day=="Morning") %>% count (time_of_day)
-     
-                  
+cycle2022_date %>% filter(time_of_day=="Morning") %>% count (time_of_day)
 
+# Total rides by member class in afternoon
+cycle2021_date %>% (group_by(member_casual) %>% filter(time_of_day =="Afternoon")%>%count(time_of_day)
+cycle2022_date %>% (group_by(member_casual) %>% filter(time_of_day =="Afternoon")%>%count(time_of_day)
 
+# Total rides in afternoon
+cycle2021_date %>% filter(time_of_day=="Afternoon") %>% count (time_of_day)
+cycle2022_date %>% filter(time_of_day=="Afternoon") %>% count (time_of_day)
 
+# Total rides by member class in evening 
+cycle2021_date %>% (group_by(member_casual) %>% filter(time_of_day =="Evening")%>%count(time_of_day)
+cycle2022_date %>% (group_by(member_casual) %>% filter(time_of_day =="Evening")%>%count(time_of_day)
 
+#Total rides in evening
+cycle2021_date %>% filter(time_of_day=="Evening") %>% count (time_of_day)
+cycle2022_date %>% filter(time_of_day=="Evening") %>% count (time_of_day)
+
+# Total rides by member class in night
+cycle2021_date %>% (group_by(member_casual) %>% filter(time_of_day =="Night")%>%count(time_of_day)
+cycle2022_date %>% (group_by(member_casual) %>% filter(time_of_day =="Night")%>%count(time_of_day)
+
+# Total rides in night
+cycle2021_date %>% filter(time_of_day=="Night") %>% count (time_of_day)
+cycle2022_date %>% filter(time_of_day=="Night") %>% count (time_of_day)
+
+# Total rides by member class at all times of day
+cycle2021_date %>% group_by(member_casual) %>% count(time_of_day)
+cycle2022_date %>% group_by(member_casual) %>% count(time_of_day)
+
+# Total rides at all times of day
+cycle2021_date %>% group_by(time_of_day) %>% count(time_of_day)
+cycle2022_date %>% group_by(time_of_day) %>% count(time_of_day)
+
+# Total rides by member class by day of week
+cycle2021_date %>% group_by(member_casual) %>% count(days_of_week)
+cycle2022_date %>% group_by(member_casual) %>% count(day_of_week)
+
+# Total rides by day of week
+cycle2021_date %>% count(day_of_week)
+cycle2022_date %>% count(day_of_week)
+
+# Total rides by member class by day of month
+cycle2021_date %>% group_by(member_casual) %>% count(day) %>% print(n=62)
+cycle2022_date %>% group_by(member_casual) %>% count(day) %>% print(n=62)
+
+# Total rides by day of month
+cycle2021_date %>% count(day) %>% print(n=31)
+cycle2022_date %>% count(day) %>% print(n=31)
+
+# Total rides by member class by month
+cycle2021_date %>% group_by(member_casual) %>% count(month) %>% print(n=24)
+cycle2022_date %>% group_by(member_casual) %>% count(month) %>% print(n=24)
+
+# Total rides by month
+cycle2021_date %>% count(month)
+cycle2022_date %>% count(month)
+
+# Total rides by member class in spring season
+cycle2021_date %>% group_by(member_casual) %>% filter(season=="Spring") %>% count(season)
+cycle2022_date %>% group_by(member_casual) %>% filter(season=="Spring") %>% count(season)
+
+# Total rides in spring season
+cycle2021_date %>% filter(season="Spring") %>% count(season)
+cycle2022_date %>% filter(season="Spring") %>% count(season)
+
+# Total rides by member class in summer season
+cycle2021_date %>% group_by(member_casual) %>% filter(season=="Summer") %>% count(season)
+cycle2022_date %>% group_by(member_casual) %>% filter(season=="Summer") %>% count(season)
  
+# Total rides in summer season
+cycle2021_date %>% filter(season="Summer") %>% count(season)
+cycle2022_date %>% filter(season="Summer") %>% count(season)
 
+# Total rides by member class in fall season
+cycle2021_date %>% group_by(member_casual) %>% filter(season=="Fall") %>% count(season)
+cycle2022_date %>% group_by(member_casual) %>% filter(season=="Fall") %>% count(season)
+
+# Total rides in fall season
+cycle2021_date %>% filter(season="Fall") %>% count(season)
+cycle2022_date %>% filter(season="Fall") %>% count(season)
+
+# Total rides by member class in winter season
+cycle2021_date %>% group_by(member_casual) %>% filter(season=="Winter") %>% count(season)
+cycle2022_date %>% group_by(member_casual) %>% filter(season=="Winter") %>% count(season)
+
+# Total rides in winter season
+cycle2021_date %>% filter(season="Winter") %>% count(season)
+cycle2022_date %>% filter(season="Winter") %>% count(season)
+
+# Total rides by member class in all seasons
+cycle2021_date %>% group_by(season,member_casual) %>% count(season)
+cycle2022_date %>% group_by(season,member_casual) %>% count(season)
+
+# Total rides in all seasons
+cycle2021_date %>% group_by(season) %>% count(season)
+cycle2022_date %>% group_by(season) %>% count(season)
+
+# Average ride length
+cycle2021_averageRide=mean(cycle2021_date$ride_length)
+cycle2022_averageRide=mean(cycle2022_date$ride_length)
+
+# Average ride length by member type
+cycle2021_date %>% group_by(member_casual) %>% summarise_at(vars(ride_length),list(time=mean))
+cycle2022_date %>% group_by(member_casual) %>% summarise_at(vars(ride_length),list(time=mean))
+
+# Average ride length by type of bike by member class
+cycle2021_date %>% group_by(member_casual,rideable_type) %>% summarise_at(vars(ride_length),list(time=mean))
+cycle2022_date %>% group_by(member_casual,rideable_type) %>% summarise_at(vars(ride_length),list(time=mean))
+                                                                          
+$ Average bike length by type of bike
+cycle2021_date %>% group_by(hour) %>% summarise_at(vars(ride_length),list(time=mean) %>% print(n=24)
+cycle2022_date %>% group_by(hour) %>% summarise_at(vars(ride_length),list(time=mean) %>% print(n=24)
 
 
 
