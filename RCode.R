@@ -309,3 +309,94 @@ cycle2021_date %>% group_by(member_casual) %>% filter(time_of_day == "Morning") 
 cycle2022_date %>% group_by(member_casual) %>% filter(time_of_day == "Morning") %>% summarise_at(vars(ride_length),list(time = mean))
 
 # Average ride length in morning
+cycle2021_date %>% filter(time_of_day="Morning") %>% summarise_at(vars(ride_length),list(time=mean))
+cycle2022_date %>% filter(time_of_day="Morning") %>% summarise_at(vars(ride_length),list(time=mean))
+
+# Average ride length in afternoon by member class
+cycle2021_date %>% group_by(member_casual) %>% filter(time_of_day == "Afternoon") %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2022_date %>% group_by(member_casual) %>% filter(time_of_day == "Afternoon") %>% summarise_at(vars(ride_length),list(time = mean))
+
+# Average ride length in afternoon
+cycle2021_date %>% filter(time_of_day="Afternoon") %>% summarise_at(vars(ride_length),list(time=mean))
+cycle2022_date %>% filter(time_of_day="Afternoon") %>% summarise_at(vars(ride_length),list(time=mean))
+
+# Average ride length in evening by member class
+cycle2021_date %>% group_by(member_casual) %>% filter(time_of_day == "Evening") %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2022_date %>% group_by(member_casual) %>% filter(time_of_day == "Evening") %>% summarise_at(vars(ride_length),list(time = mean))
+
+# Average ride length in evening
+cycle2021_date %>% filter(time_of_day="Evening") %>% summarise_at(vars(ride_length),list(time=mean))
+cycle2022_date %>% filter(time_of_day="Evening") %>% summarise_at(vars(ride_length),list(time=mean))
+
+# Average ride length in night by member class
+cycle2021_date %>% group_by(member_casual) %>% filter(time_of_day == "Night") %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2022_date %>% group_by(member_casual) %>% filter(time_of_day == "Night") %>% summarise_at(vars(ride_length),list(time = mean))
+
+# Average ride length in night
+cycle2021_date %>% filter(time_of_day="Night") %>% summarise_at(vars(ride_length),list(time=mean))
+cycle2022_date %>% filter(time_of_day="Night") %>% summarise_at(vars(ride_length),list(time=mean))
+
+# Average ride length by member class at all times of day
+cycle2021_date %>% group_by(time_of_day, member_casual) %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2022_date %>% group_by(time_of_day, member_casual) %>% summarise_at(vars(ride_length),list(time = mean))
+                                                   
+# Average ride length at all times of day
+cycle2021_date %>% group_by(time_of_day) %>% summarise_at(vars(ride_length),list(time=mean))
+cycle2022_date %>% group_by(time_of_day) %>% summarise_at(vars(ride_length),list(time=mean))
+
+# Average ride length by member class by day of week
+cycle2021_date %>% group_by(member_casual, day_of_week) %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2022_date %>% group_by(member_casual, day_of_week) %>% summarise_at(vars(ride_length),list(time = mean))
+
+# Average ride length by day of week
+cycle2021_date %>% group_by(day_of_week) %>% summarise_at(vars(ride_length),list(time=mean))
+cycle2022_date %>% group_by(day_of_week) %>% summarise_at(vars(ride_length),list(time=mean))
+
+# Average ride length by member class by day of month
+cycle2021_date%>% group_by(day, member_casual) %>% summarise_at(vars(ride_length),list(time = mean)) %>% print(n=62)
+cycle2022_date%>% group_by(day, member_casual) %>% summarise_at(vars(ride_length),list(time = mean)) %>% print(n=62)
+
+# Average ride length by day of month
+cycle2021_date %>% group_by(day) %>% summarise_at(vars(ride_length),list(time = mean)) %>% print(n=31)
+cycle2022_date %>% group_by(day) %>% summarise_at(vars(ride_length),list(time = mean)) %>% print(n=31)
+
+# Average ride length by member class in spring season
+cycle2021_date %>% group_by(member_casual) %>% filter(season == "Spring") %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2022_date %>% group_by(member_casual) %>% filter(season == "Spring") %>% summarise_at(vars(ride_length),list(time = mean))
+
+# Average ride length in spring season
+cycle2021_date %>% filter(season == "Spring") %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2022_date %>% filter(season == "Spring") %>% summarise_at(vars(ride_length),list(time = mean))
+
+# Average ride length by member class in summer season
+cycle2021_date %>% group_by(member_casual) %>% filter(season == "Summer") %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2022_date %>% group_by(member_casual) %>% filter(season == "Summer") %>% summarise_at(vars(ride_length),list(time = mean))                                                   
+
+# Average ride length in summer season
+cycle2021_date %>% filter(season == "Summer") %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2022_date %>% filter(season == "Summer") %>% summarise_at(vars(ride_length),list(time = mean))
+                                                   
+# Average ride length by member class in fall season
+cycle2021_date %>% group_by(member_casual) %>% filter(season == "Fall") %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2022_date %>% group_by(member_casual) %>% filter(season == "Fall") %>% summarise_at(vars(ride_length),list(time = mean))
+
+# Average ride length in fall season
+cycle2021_date %>% filter(season == "Fall") %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2022_date %>% filter(season == "Fall") %>% summarise_at(vars(ride_length),list(time = mean))
+                                                   
+# Average ride length by member class in winter season
+cycle2021_date %>% group_by(member_casual) %>% filter(season == "Winter") %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2022_date %>% group_by(member_casual) %>% filter(season == "Winter") %>% summarise_at(vars(ride_length),list(time = mean))
+
+# Average ride length in winter season
+cycle2021_date %>% filter(season == "Winter") %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2022_date %>% filter(season == "Winter") %>% summarise_at(vars(ride_length),list(time = mean))
+
+#average ride length by member class in all seasons
+cycle2021_date %>% group_by(season, member_casual) %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2022_date %>% group_by(season, member_casual) %>% summarise_at(vars(ride_length),list(time = mean))
+
+#average ride length in all seasons
+cycle2021_date %>% group_by(season) %>% summarise_at(vars(ride_length),list(time = mean))
+cycle2021_date %>% group_by(season) %>% summarise_at(vars(ride_length),list(time = mean))
+                                                  
