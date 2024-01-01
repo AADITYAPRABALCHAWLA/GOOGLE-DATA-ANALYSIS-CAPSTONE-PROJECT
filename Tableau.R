@@ -19,30 +19,30 @@ library(data.table) #exporting data frame
  dec2021=read.csv("202112-divvy-tripdata.csv")
 
 #merge all of the data frames into one year view
-cyclistic_df <- rbind (jan2021,feb2021,mar2021,apr2021,may2021,jun2021,jul2021,aug2021,sep2021,oct2021,nov2021,dec2021)
+cycle2021<- rbind (jan2021,feb2021,mar2021,apr2021,may2021,jun2021,jul2021,aug2021,sep2021,oct2021,nov2021,dec2021)
 
 #remove individual month data frames to clear up space in the environment 
 remove(jan2021,feb2021,mar2021,apr2021,may2021,jun2021,jul2021,aug2021,sep2021,oct2021,nov2021,dec2021)
 #create new data frame to contain new columns
-cyclistic_date <- cyclistic_df
+cycle2021_date <- cycle2021
 
 #calculate ride length by subtracting ended_at time from started_at time and converted it to minutes
-cyclistic_date$ride_length <- difftime(cyclistic_df$ended_at, cyclistic_df$started_at, units = "mins")
-cyclistic_date$ride_length <- round(cyclistic_date$ride_length, digits = 1)
+cycle2021_date$ride_length <- difftime(cycle2021$ended_at, cycle2021$started_at, units = "mins")
+cycle2021_date$ride_length <- round(cycle2021_date$ride_length, digits = 1)
 
 #create columnds for: day of week, month, day, year, time, hour
-cyclistic_date$date <- as.Date(cyclistic_date$started_at) #default format is yyyy-mm-dd, use start date
-cyclistic_date$day_of_week <- wday(cyclistic_df$started_at) #calculate the day of the week 
-cyclistic_date$day_of_week <- format(as.Date(cyclistic_date$date), "%A") #create column for day of week
-cyclistic_date$month <- format(as.Date(cyclistic_date$date), "%m")#create column for month
-cyclistic_date$day <- format(as.Date(cyclistic_date$date), "%d") #create column for day
-cyclistic_date$year <- format(as.Date(cyclistic_date$date), "%Y") #create column for year
-cyclistic_date$time <- format(as.Date(cyclistic_date$date), "%H:%M:%S") #format time as HH:MM:SS
-cyclistic_date$time <- as_hms((cyclistic_df$started_at)) #create new column for time
-cyclistic_date$hour <- hour(cyclistic_date$time) #create new column for hour
+cycle2021_date$date <- as.Date(cycle2021_date$started_at) #default format is yyyy-mm-dd, use start date
+cycle2021_date$day_of_week <- wday(cycle2021$started_at) #calculate the day of the week 
+cycle2021_date$day_of_week <- format(as.Date(cycle2021_date$date), "%A") #create column for day of week
+cycle2021_date$month <- format(as.Date(cycle2021_date$date), "%m")#create column for month
+cycle2021_date$day <- format(as.Date(cycle2021_date$date), "%d") #create column for day
+cycle2021_date$year <- format(as.Date(cycle2021_date$date), "%Y") #create column for year
+cycle2021_date$time <- format(as.Date(cycle2021_date$date), "%H:%M:%S") #format time as HH:MM:SS
+cycle2021_date$time <- as_hms((cycle2021$started_at)) #create new column for time
+cycle2021_date$hour <- hour(cycle2021_date$time) #create new column for hour
 
 #create column for different seasons: Spring, Summer, Fall, Winter
-cyclistic_date <-cyclistic_date %>% mutate(season = 
+cycle2021_date <-cycle2021_date %>% mutate(season = 
                                              case_when(month == "03" ~ "Spring",
                                                        month == "04" ~ "Spring",
                                                        month == "05" ~ "Spring",
@@ -58,7 +58,7 @@ cyclistic_date <-cyclistic_date %>% mutate(season =
 )
 
 #create column for different time_of_day: Night, Morning, Afternoon, Evening
-cyclistic_date <-cyclistic_date %>% mutate(time_of_day = 
+cycle2021_date <-cycle2021_date %>% mutate(time_of_day = 
                                              case_when(hour == "0" ~ "Night",
                                                        hour == "1" ~ "Night",
                                                        hour == "2" ~ "Night",
@@ -87,7 +87,7 @@ cyclistic_date <-cyclistic_date %>% mutate(time_of_day =
 
 
 #create a column for the month using the full month name
-cyclistic_date <-cyclistic_date %>% mutate(month = 
+cycle2021_date <-cycle2021_date %>% mutate(month = 
                                              case_when(month == "01" ~ "January",
                                                        month == "02" ~ "February",
                                                        month == "03" ~ "March",
@@ -104,21 +104,21 @@ cyclistic_date <-cyclistic_date %>% mutate(month =
 )
 
 #clean the data
-cyclistic_date <- na.omit(cyclistic_date) #remove rows with NA values
-cyclistic_date <- distinct(cyclistic_date) #remove duplicate rows 
-cyclistic_date <- cyclistic_date[!(cyclistic_date$ride_length <=0),] #remove where ride_length is 0 or negative
-cyclistic_date <- cyclistic_date %>%  #remove columns not needed: ride_id, start_station_id, end_station_id, start_lat, start_long, end_lat, end_lng
+cycle2021_date <- na.omit(cycle2021_date) #remove rows with NA values
+cycle2021_date <- distinct(cycle2021_date) #remove duplicate rows 
+cycle2021_date <- cycle2021_date[!(cycle2021_date$ride_length <=0),] #remove where ride_length is 0 or negative
+cycle2021_date <- cycle2021_date %>%  #remove columns not needed: ride_id, start_station_id, end_station_id, start_lat, start_long, end_lat, end_lng
   select(-c(ride_id, start_station_id, end_station_id,start_lat,start_lng,end_lat,end_lng)) 
 
 #view the final data
-View(cyclistic_date)
+View(cycle2021_date)
 
 #created a new dataframe to use in Tableau
-cyclistic_tableau <- cyclistic_date
+cyclistic_tableau <- cycle2021_date
 
 #clean the data
 cyclistic_tableau <- cyclistic_tableau %>%  #remove columns not needed: start_station_name, end_station_name, time, started_at, ended_at
   select(-c(start_station_name, end_station_name, time, started_at, ended_at))
 
 #download the new data as a .csv file
-fwrite(cyclistic_tableau,"cyclistic_data.csv")
+fwrite(cyclistic_tableau,"cycle2021_date.csv")
