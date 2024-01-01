@@ -8,7 +8,7 @@
 **Most prefered bike by casual riders:** Docked Bike<br/>
 **Most prefered bike by member riders:** Classic Bike<br/>
 **Overall most prefered bike:** Classic Bike((1,777,593 rides or 43% of total rides)<br/>
-**2nd most prefered bike:** Docked Bike(1,545,936 rides or 37% of total rides)
+**2nd most prefered bike:** Docked Bike(1,545,936 rides or 37% of total rides)<br/>
 **Least prefered bike:** Electric Bike ( by both casual and member riders)(828,610 rides or 20% of total rides)<br/>
 # Outcome 3
 ![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/8537d4ab-ebe6-4533-ad7f-a1e5162b1772)<br/>
