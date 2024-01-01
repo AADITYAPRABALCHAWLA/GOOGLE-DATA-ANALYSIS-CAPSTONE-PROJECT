@@ -1,12 +1,12 @@
 #----------------------------------------- R CODE--------------------------------------------------
 
-# loading libraries
+# Loading libraries
 library(tidyverse)
 library(lubridate)
 library(hms)
 library(data.table)
 
-# laoding data into varaibles
+# Laoding data into varaibles
  jan2021=read.csv("202101-divvy-tripdata.csv")
  feb2021=read.csv("202102-divvy-tripdata.csv")
  mar2021=read.csv("202103-divvy-tripdata.csv")
@@ -32,19 +32,19 @@ library(data.table)
  nov2022=read.csv("202211-divvy-tripdata.csv")
  dec2022=read.csv("202212-divvy-tripdata.csv")
 
-# merging data yearwise
+# Merging data yearwise
 cycle2021=rbind(jan2021,feb2021,mar2021,apr2021,may2021,jun2021,jul2021,aug2021,sep2021,oct2021,nov2021,dec2021)
 cycle2022=rbind(jan2022,feb2022,mar2022,apr2022,may2022,jun2022,jul2022,aug2022,sep2022,oct2022,nov2022,dec2022)
 
-# creating new data frames to add more columns
+# Creating new data frames to add more columns
 cycle2021_date=cycle2021
 cycle2022_date=cycle2022
 
-# calculating ride length
+# Calculating ride length
 cycle2021_date$ride_length=difftime(cycle2021$ended_at,cycle2021$started_at,units="mins")
 cycle2022_date$ride_length=difftime(cycle2022$ended_at,cycle2022$started_at,units="mins")
 
-# creating columns for date,day of week, month,day,year,time and hour
+# Creating columns for date,day of week, month,day,year,time and hour
 cycle2021_date$date=as.Date(cycle2021$started_at)
 cycle2022_date$date=as.Date(cycle2022$started_at)
 cycle2021_date$days_of_week=wday(cycle2021$started_at)
@@ -392,11 +392,11 @@ cycle2022_date %>% group_by(member_casual) %>% filter(season == "Winter") %>% su
 cycle2021_date %>% filter(season == "Winter") %>% summarise_at(vars(ride_length),list(time = mean))
 cycle2022_date %>% filter(season == "Winter") %>% summarise_at(vars(ride_length),list(time = mean))
 
-#average ride length by member class in all seasons
+# Average ride length by member class in all seasons
 cycle2021_date %>% group_by(season, member_casual) %>% summarise_at(vars(ride_length),list(time = mean))
 cycle2022_date %>% group_by(season, member_casual) %>% summarise_at(vars(ride_length),list(time = mean))
 
-#average ride length in all seasons
+# Average ride length in all seasons
 cycle2021_date %>% group_by(season) %>% summarise_at(vars(ride_length),list(time = mean))
 cycle2021_date %>% group_by(season) %>% summarise_at(vars(ride_length),list(time = mean))
                                                   
