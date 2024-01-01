@@ -21,7 +21,7 @@
 **Day with min avg ride length:** Thursday<br/>
 # Outcome 5
 ![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/1196c9ce-13e2-440a-98ec-8d71e455c403)
-![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/07513f22-18e4-40ce-88ee-199e301964e1)
+![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/07513f22-18e4-40ce-88ee-199e301964e1)<br/>
 **Season with max no of rides:** Summer(1,903,446 rides or 46% of total rides.)<br/>
 **Season with min no of rides:** Winter<br/>
 **Month with max no of rides:** July(691,476 rides or 16% of total rides)<br/>
