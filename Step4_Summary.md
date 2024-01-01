@@ -34,13 +34,13 @@
 5. Day with min avg ride length is Thursday
 6. Most riders prefer Summer season and dislike Winter season
 # Business Suggestions
-**Question1:** How do annual members and casual riders use Cyclistic bikes differently?
-**Answer:** Casual riders use Cyclistic bikes more than annual members. They have more ride length and more avg rides. Casual riders prefer docked bikes while annual members prefer Classic Bikes.
-**Question2:** Why would casual riders buy Cyclistic annual memberships?
-**Answer:** Causal riders ride more and have high avg ride length so for them annual memberships would be more suitable.
-**Question3:** How can Cyclistic use digital media to influence casual riders to become members? 
+**Question1:** How do annual members and casual riders use Cyclistic bikes differently?<br/>
+**Answer:** Casual riders use Cyclistic bikes more than annual members. They have more ride length and more avg rides. Casual riders prefer docked bikes while annual members prefer Classic Bikes.<br/>
+**Question2:** Why would casual riders buy Cyclistic annual memberships?<br/>
+**Answer:** Causal riders ride more and have high avg ride length so for them annual memberships would be more suitable.<br/>
+**Question3:** How can Cyclistic use digital media to influence casual riders to become members?<br/>
 **Answer:** 1. As most prefers season is summer, run more no of ads in summer season and particulary in July month.<br/>
 2. Winter season being least prefered season for riders, offer speacial discounts in winter season and in particularly in Febrary month.<br/>
 3. Thursday being the day with least no of rides, offer weekly discounts on Thursday<br/>
 4. As casual members have high avg ride length, offer special discounts to them based on thier ride lengths.<br/>
-5. Casual members prefer Docked Bikes so offer special discounts on membership for those having Docked Bikes.
+5. Casual members prefer Docked Bikes so offer special discounts on membership for those having Docked Bikes.<br/>
