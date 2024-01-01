@@ -15,5 +15,4 @@
    c.Highlights to specific important notes<br/>
    d.Got rid of labels for visual purposes<br/>
 
-  
-![alt text](https://media.geeksforgeeks.org/wp-content/uploads/20211220210023/imageedit137023560721.png)
+
