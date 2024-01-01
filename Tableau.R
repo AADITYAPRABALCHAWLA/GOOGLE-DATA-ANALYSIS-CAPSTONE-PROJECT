@@ -5,18 +5,18 @@ library(hms) #time
 library(data.table) #exporting data frame
 
 # Load data into variables
-aug2020 <- read_csv("202008-divvy-tripdata.csv") 
-sep2020 <- read_csv("202009-divvy-tripdata.csv") 
-oct2020 <- read_csv("202010-divvy-tripdata.csv")
-nov11_df <- read_csv("202011-divvy-tripdata.csv") 
-dec12_df <- read_csv("202012-divvy-tripdata.csv")
-jan01_df <- read_csv("202101-divvy-tripdata.csv") 
-feb02_df <- read_csv("202102-divvy-tripdata.csv") 
-mar03_df <- read_csv("202103-divvy-tripdata.csv")
-apr04_df <- read_csv("202104-divvy-tripdata.csv")
-may05_df <- read_csv("202105-divvy-tripdata.csv") 
-jun0 <- read_csv("202106-divvy-tripdata.csv") 
-jul2020 <- read_csv("202107-divvy-tripdata.csv") 
+ jan2021=read.csv("202101-divvy-tripdata.csv")
+ feb2021=read.csv("202102-divvy-tripdata.csv")
+ mar2021=read.csv("202103-divvy-tripdata.csv")
+ apr2021=read.csv("202104-divvy-tripdata.csv")
+ may2021=read.csv("202105-divvy-tripdata.csv")
+ jun2021=read.csv("202106-divvy-tripdata.csv")
+ jul2021=read.csv("202107-divvy-tripdata.csv")
+ aug2021=read.csv("202108-divvy-tripdata.csv")
+ sep2021=read.csv("202109-divvy-tripdata.csv")
+ oct2021=read.csv("202110-divvy-tripdata.csv")
+ nov2021=read.csv("202111-divvy-tripdata.csv")
+ dec2021=read.csv("202112-divvy-tripdata.csv")
 
 #merge all of the data frames into one year view
 cyclistic_df <- rbind (aug08_df, sep09_df, oct10_df, nov11_df, dec12_df, jan01_df, feb02_df, mar03_df, apr04_df, may05_df, jun06_df, jul07_df)
