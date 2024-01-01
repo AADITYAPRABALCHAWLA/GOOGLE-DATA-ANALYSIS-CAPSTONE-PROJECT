@@ -44,3 +44,6 @@
 3. Thursday being the day with least no of rides, offer weekly discounts on Thursday<br/>
 4. As casual members have high avg ride length, offer special discounts to them based on thier ride lengths.<br/>
 5. Casual members prefer Docked Bikes so offer special discounts on membership for those having Docked Bikes.<br/>
+
+# Total time spend
+4 hours
