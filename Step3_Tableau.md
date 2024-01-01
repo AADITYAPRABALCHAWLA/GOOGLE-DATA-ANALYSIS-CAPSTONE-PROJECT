@@ -16,6 +16,7 @@
    d.Got rid of labels for visual purposes<br/>
 
 # Outputs
+Here is a link for my public tableau : [link](https://public.tableau.com/app/profile/aaditya.prabal.chawla/viz/Googledataanalysiscapstoneproject/Story1)
 **Dashboard 1**
 ![Dashboard1](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Dashboard%201.png)
 **Dashboard 2**
