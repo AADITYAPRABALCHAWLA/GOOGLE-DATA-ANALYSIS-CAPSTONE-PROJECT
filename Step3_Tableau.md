@@ -19,8 +19,8 @@
 **Dashboard 1**
 ![Dashboard1](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Dashboard1.png)
 **Dashboard 2**
-![Dashboard2](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Dashboard1.png)
+![Dashboard2](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Dashboard2.png)
 **Dashboard 3**
-![Dashboard3](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Dashboard1.png)
+![Dashboard3](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Dashboard3.png)
 
 
