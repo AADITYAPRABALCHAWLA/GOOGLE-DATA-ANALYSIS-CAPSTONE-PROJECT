@@ -19,11 +19,10 @@ library(data.table) #exporting data frame
  dec2021=read.csv("202112-divvy-tripdata.csv")
 
 #merge all of the data frames into one year view
-cyclistic_df <- rbind (aug08_df, sep09_df, oct10_df, nov11_df, dec12_df, jan01_df, feb02_df, mar03_df, apr04_df, may05_df, jun06_df, jul07_df)
+cyclistic_df <- rbind (jan2021,feb2021,mar2021,apr2021,may2021,jun2021,jul2021,aug2021,sep2021,oct2021,nov2021,dec2021)
 
 #remove individual month data frames to clear up space in the environment 
-remove(aug08_df, sep09_df, oct10_df, nov11_df, dec12_df, jan01_df, feb02_df, mar03_df, apr04_df, may05_df, jun06_df, jul07_df)
-
+remove(jan2021,feb2021,mar2021,apr2021,may2021,jun2021,jul2021,aug2021,sep2021,oct2021,nov2021,dec2021)
 #create new data frame to contain new columns
 cyclistic_date <- cyclistic_df
 
