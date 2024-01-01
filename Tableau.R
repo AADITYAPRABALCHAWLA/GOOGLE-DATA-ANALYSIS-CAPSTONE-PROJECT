@@ -18,19 +18,19 @@ library(data.table) #exporting data frame
  nov2021=read.csv("202111-divvy-tripdata.csv")
  dec2021=read.csv("202112-divvy-tripdata.csv")
 
-#merge all of the data frames into one year view
+# Merge all of the data frames into one year view
 cycle2021<- rbind (jan2021,feb2021,mar2021,apr2021,may2021,jun2021,jul2021,aug2021,sep2021,oct2021,nov2021,dec2021)
 
-#remove individual month data frames to clear up space in the environment 
+# Remove individual month data frames to clear up space in the environment 
 remove(jan2021,feb2021,mar2021,apr2021,may2021,jun2021,jul2021,aug2021,sep2021,oct2021,nov2021,dec2021)
-#create new data frame to contain new columns
+# Create new data frame to contain new columns
 cycle2021_date <- cycle2021
 
-#calculate ride length by subtracting ended_at time from started_at time and converted it to minutes
+# Calculate ride length by subtracting ended_at time from started_at time and converted it to minutes
 cycle2021_date$ride_length <- difftime(cycle2021$ended_at, cycle2021$started_at, units = "mins")
 cycle2021_date$ride_length <- round(cycle2021_date$ride_length, digits = 1)
 
-#create columnds for: day of week, month, day, year, time, hour
+# Create columnds for: day of week, month, day, year, time, hour
 cycle2021_date$date <- as.Date(cycle2021_date$started_at) #default format is yyyy-mm-dd, use start date
 cycle2021_date$day_of_week <- wday(cycle2021$started_at) #calculate the day of the week 
 cycle2021_date$day_of_week <- format(as.Date(cycle2021_date$date), "%A") #create column for day of week
@@ -41,7 +41,7 @@ cycle2021_date$time <- format(as.Date(cycle2021_date$date), "%H:%M:%S") #format 
 cycle2021_date$time <- as_hms((cycle2021$started_at)) #create new column for time
 cycle2021_date$hour <- hour(cycle2021_date$time) #create new column for hour
 
-#create column for different seasons: Spring, Summer, Fall, Winter
+# Create column for different seasons: Spring, Summer, Fall, Winter
 cycle2021_date <-cycle2021_date %>% mutate(season = 
                                              case_when(month == "03" ~ "Spring",
                                                        month == "04" ~ "Spring",
@@ -57,7 +57,7 @@ cycle2021_date <-cycle2021_date %>% mutate(season =
                                                        month == "02" ~ "Winter")
 )
 
-#create column for different time_of_day: Night, Morning, Afternoon, Evening
+# Create column for different time_of_day: Night, Morning, Afternoon, Evening
 cycle2021_date <-cycle2021_date %>% mutate(time_of_day = 
                                              case_when(hour == "0" ~ "Night",
                                                        hour == "1" ~ "Night",
@@ -86,7 +86,7 @@ cycle2021_date <-cycle2021_date %>% mutate(time_of_day =
 )
 
 
-#create a column for the month using the full month name
+# Create a column for the month using the full month name
 cycle2021_date <-cycle2021_date %>% mutate(month = 
                                              case_when(month == "01" ~ "January",
                                                        month == "02" ~ "February",
@@ -103,22 +103,25 @@ cycle2021_date <-cycle2021_date %>% mutate(month =
                                                        )
 )
 
-#clean the data
+# Clean the data
 cycle2021_date <- na.omit(cycle2021_date) #remove rows with NA values
 cycle2021_date <- distinct(cycle2021_date) #remove duplicate rows 
 cycle2021_date <- cycle2021_date[!(cycle2021_date$ride_length <=0),] #remove where ride_length is 0 or negative
 cycle2021_date <- cycle2021_date %>%  #remove columns not needed: ride_id, start_station_id, end_station_id, start_lat, start_long, end_lat, end_lng
   select(-c(ride_id, start_station_id, end_station_id,start_lat,start_lng,end_lat,end_lng)) 
 
-#view the final data
+# View the final data
 View(cycle2021_date)
 
-#created a new dataframe to use in Tableau
+# Created a new dataframe to use in Tableau
 cyclistic_tableau <- cycle2021_date
 
-#clean the data
+# Clean the data
 cyclistic_tableau <- cyclistic_tableau %>%  #remove columns not needed: start_station_name, end_station_name, time, started_at, ended_at
   select(-c(start_station_name, end_station_name, time, started_at, ended_at))
 
-#download the new data as a .csv file
+# Download the new data as a .csv file
 fwrite(cyclistic_tableau,"cycle2021_date.csv")
+
+
+# similiarly you can create data for cycle2022_date
