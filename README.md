@@ -11,7 +11,7 @@ I am a junior data analyst working in the marketing analyst team at Cyclistic, a
 Design marketing strategies aimed at converting casual riders into annual members
 
 # 🧑‍💼Business Questions 
-1.How do annual members and casual riders use Cyclistic bikes differently?<br/>
+1. How do annual members and casual riders use Cyclistic bikes differently?<br/>
 2. Why would casual riders buy Cyclistic annual memberships?<br/>
 3. How can Cyclistic use digital media to influence casual riders to become members?<br/>
 
@@ -19,4 +19,4 @@ Design marketing strategies aimed at converting casual riders into annual member
 **[Step 1](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Step1_Excel.md)**: Analyze the data sperately month wise in excel <br/>
 **[Step 2](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Step2_RCODE.R)**: Use R to anayze the data as a whole<br/>
 **[Step 3](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Step3_Tableau.md)**: Use tableau dashboards to create visual representations of our output<br/>
-**Step 4**: Create a summary of analysis
+**[Step 4](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Step4_Summary.md)**: Create a summary of analysis
