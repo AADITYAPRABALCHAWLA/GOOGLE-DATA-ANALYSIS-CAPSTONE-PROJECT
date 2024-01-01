@@ -23,4 +23,6 @@
 **Dashboard 3**
 ![Dashboard3](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Dashboard%203.png)
 
+# Total time spend
+15 hours
 
