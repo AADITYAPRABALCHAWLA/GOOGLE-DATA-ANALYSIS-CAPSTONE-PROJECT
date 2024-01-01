@@ -18,11 +18,7 @@
 ![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/52072903-d60e-4ced-8764-cf4ca49cb20d)<br/>
 **Day with max avg ride length:** Sunday<br/>
 **Day with min avg ride length:** Thursday<br/>
- # Outcome 5
- ![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/5b8619ac-0b92-4b7d-b792-77b69718236d)<br/>
-**Day with max no of rides:** Saturday<br/>
-**Day with min no of rides:** Thursday<br/>
-# Outcome 6
+# Outcome 5
 ![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/1196c9ce-13e2-440a-98ec-8d71e455c403)
 ![image](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/assets/103323016/07513f22-18e4-40ce-88ee-199e301964e1)
 **Season with max no of rides:** Summer<br/>
@@ -33,6 +29,6 @@
 1. Difference between casual and member riders is 13%(0.51M).
 2. Electrics bikes is not prefered.
 3. Casual riders has average ride more than member riders.
-4. Most prefered day for riding is Saturday while most prefered day for long rides is Sunday.
-5. Day with least no of rides and min avg ride length is Thursday
+4. Most prefered day for riding is Sunday.
+5. Day with min avg ride length is Thursday
 6. Most riders prefer Summer season and dislike Winter season
