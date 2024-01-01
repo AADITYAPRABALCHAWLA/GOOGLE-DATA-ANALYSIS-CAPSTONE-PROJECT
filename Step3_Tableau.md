@@ -15,4 +15,12 @@
    c.Highlights to specific important notes<br/>
    d.Got rid of labels for visual purposes<br/>
 
+# Outputs
+**Dashboard 1**
+![Dashboard1](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Dashboard1.png)
+**Dashboard 2**
+![Dashboard2](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Dashboard1.png)
+**Dashboard 3**
+![Dashboard3](https://github.com/AADITYAPRABALCHAWLA/GOOGLE-DATA-ANALYSIS-CAPSTONE-PROJECT/blob/main/Dashboard1.png)
+
 
